@@ -11,4 +11,6 @@ if __name__ == '__main__':
         print(file.file_id, file.name, file.type)
 
     # 上传文件
-    ali.upload_file('test.txt')
+    ali.upload_file('***.txt')
+    # 下载文件
+    ali.download_files([ali.get_file_by_path('***.tar.gz')])
